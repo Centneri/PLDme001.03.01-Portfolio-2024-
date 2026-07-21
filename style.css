@@ -1,0 +1,153 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #141414;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 550;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+}
+
+  
+#blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+}
+  
+#blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+}
+
+.sectype {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+  
+.sectype p {
+    font-family: monospace;
+    font-size: 2rem;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(22) forwards, blink 1s step-end infinite;
+    width: 40%;
+    z-index: 999;
+    color: white;
+}
+
+.type-childer2 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.type-childer2:hover > .letter {
+    transition-duration: 500ms;
+}
+
+.type-childer2:hover > .letter:nth-child(1) {
+    transform: translate(-30%, -30%) rotate(30deg) rotateY(-30deg) rotateX(-10deg);
+}
+.type-childer2:hover > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(-4deg) rotateY(-30deg) rotateX(-10deg);
+}
+.type-childer2:hover > .letter:nth-child(3) {
+    transform: translate(-10%, -40%) rotate(-6deg) rotateY(-30deg) rotateX(-10deg);
+}
+.type-childer2:hover > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg) rotateY(-30deg) rotateX(-10deg);
+}
+.type-childer2:hover > .letter:nth-child(5) {
+    transform: translate(10%, -30%) rotate(5deg) rotateY(-30deg) rotateX(-10deg);
+}
+.type-childer2 > .letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+}
+  
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
+.sectype > .logo-img > img {
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 15px;
+}
+
+.logo-img {
+    position: absolute;
+    margin-top: -40vmin;
+    margin-left: -90vmax;
+}
+
+.contact {
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 89%;
+    margin-top: 19%;
+}
+
+.contact > h6 {
+    margin-top: 10px;
+    transition: 500ms ease;
+}
+
+.contact > h6:hover {
+    margin-left: 10px;
+}
+
+
+

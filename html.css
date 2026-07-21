@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #141414;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 20px;
+
+}
+  
+
+::-webkit-scrollbar-track {
+    background: hsl(215, 28%, 12%);
+    
+}
+   
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(234, 130, 51));
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(rgb(119, 236, 162), rgb(50, 119, 231), rgb(234, 130, 51));
+}
+
+nav {
+    background-color: hsl(0, 0%, 10%);
+    border-bottom: 1px solid hsl(0, 0%, 15%);
+    height: 10vmin;
+    overflow: hidden;
+}
+
+.nav-div {
+    display: inline-flex;
+    padding-top: 10px;
+    margin-left: 65px;
+}
+
+.myLab{
+    width: 3.5vmin;
+    height: 3.5vmin;
+    margin-top: 10px;
+    float: right;
+    cursor: pointer;
+    display: none; 
+}
+
+.back-main{
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    font-family: monospace;
+    padding: 0.2rem 1rem;
+    margin: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-left: 66px;
+  margin-top: 15px;
+  border: none;
+  transition: 500ms ease;
+  letter-spacing: 1px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #141414;
+  margin-left: 66px;
+  min-width: 160px;
+  z-index: 1;
+  border: 1px solid hsl(0, 0%, 15%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.dropdown-content a {
+  color: #fff;
+  font-family: monospace;
+  padding: 15px 10px;
+  display: block;
+  transition: 300ms;
+  border-bottom: 1px solid hsl(0, 0%, 15%);
+}
+
+.dropdown-content > a:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover > .dropbtn {
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.back-main:after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 500ms;
+    border-radius: 2px;
+}
+
+.myUpgrade {
+    font-family: monospace;
+    border-radius: 10px;
+    width: 12.3vmin;
+    margin-top: 23.5px;
+    margin-left: 6.5vmin;
+    cursor: pointer;
+    height: 6.1vmin;
+    border: none;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.rgbBorder {
+    position: absolute;
+    width: 13vmin;
+    border-radius: 10px;
+    margin-left: 85%;
+    font-size: 15px;
+    font-family: monospace;
+    height: 6.7vmin;
+    margin-top: 11vmin;
+    outline: none;
+    border: none;
+    transition: 500ms ease-in-out;
+    background: linear-gradient(155deg, #020024 0%,
+     red 0%, #ffab00 12%, #e0ff00 24%,
+    #00ff08 36%, #00e4ff 48%, #0005ff 60%, 
+      #fe00e7 72%, red 84%, #ffa200 96%
+    );
+    animation: gradient 55s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 18.75em 31.25em;
+    }
+    100% {
+        background-position: 0.1em 0.1em;
+    }
+}
+
+.rgbBorder::before {
+    content: '';
+    transform: translate(-50%, -50%);
+    filter: blur(4px);
+    background: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.back-main:hover:after {
+    width: 100%;
+}
+
+.back-main2 {
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    font-family: monospace;
+    padding: 0.2rem 1rem;
+    margin: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.back-main2::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 500ms;
+    border-radius: 2px;
+}
+
+.back-main2:hover:after {
+    width: 100%;
+}
+
+.nav-filled {
+    width: 30vmax;
+    height: 52px;
+    background: transparent;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: monospace;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 32vmin;
+    margin-right: 13vmin;
+}
+
+.search-inp {
+    color: white;
+    height: 18px;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    font-family: monospace;
+}
+
+.fill-result {
+    z-index: 999;
+    position: absolute;
+    background: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.fill-result > ul{
+    border-top: 1px solid hsl(0, 0%, 20%);
+    padding: 15px 10px;
+}
+
+.fill-result > ul > li {
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    padding-right: 34vmin;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 18px;
+    transition: 200ms ease;
+}
+
+.fill-result > ul > li:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+.search-inp::placeholder {
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.nav-fill > button {
+    background: transparent;
+    margin-left: 27vmin;
+    width: 3vmin;
+    height: 3vmin;
+    outline: none;
+    border: none;
+}
+
+.nav-fill > button > img {
+    margin-top: 0.8vmin;
+}
+
+.lang-head {
+    color: #fff;
+    font-family: monospace;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cube1 {
+    background: hsl(0, 0%, 15%);
+    width: 25vmin;
+    height: 25vmin;
+    border-radius: 5px;
+    border: 2px solid hsl(64, 100%, 50%);
+    position: absolute;
+    position: fixed;
+    z-index: -1;
+    margin-left: 45%;
+    margin-top: 20%;
+    transform: rotateX(75deg) rotateY(0deg) rotateZ(10deg);
+}
+
+.cube2 {
+    background: hsl(0, 0%, 15%);
+    width: 25vmin;
+    height: 24vmin;
+    border-radius: 5px;
+    border: 2px solid hsl(0, 100%, 50%);
+    position: absolute;
+    position: fixed;
+    z-index: -1;
+    margin-left: 38.5%;
+    margin-top: 14.7%;
+    transform: rotateY(79deg) rotateZ(-16deg);
+}
+
+.cube3 {
+    background: hsl(0, 0%, 15%);
+    width: 26vmin;
+    height: 24vmin;
+    border-radius: 5px;
+    border: 1px solid hsl(125, 100%, 50%);
+    margin-left: 45.3%;
+    margin-top: 13%;
+    transform:  rotateY(20deg)  rotateZ(2deg) rotateX(20deg);
+    z-index: -1;
+    position:  absolute;
+    position: fixed;
+}

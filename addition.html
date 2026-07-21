@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer's Gallery | Addition</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="addition.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-div">
+      <a href="main.html" class="back-main" id="myBurger">Home</a>
+      <a href="addition.html" class="back-main" id="myBurger">Addition</a>
+      
+      <div class="nav-filled">
+        <div class="nav-fill">
+          <input type="text" id="input-box" placeholder="Search The Gallery" autocomplete="off" class="search-inp">
+          <button><img src="magnifying-glass-solid (1).svg" alt="Srch"></button>
+        </div>
+        <div class="fill-result">
+        </div>
+      </div>
+      <a href="about.html" class="back-main2" id="myBurger">About Us</a>
+      <a href="signup.html" class="back-main2">Sign Up</a>
+      <a href="login.html" class="back-main2">Login</a>
+      <button id="myBurg"  class="myLab">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+      </button>
+    <a href="upgrade.html" class="rgbBorder">
+        <button class="myUpgrade">
+        Upgrade
+       </button>
+    </a>
+  </div>
+</nav>
+    
+  <div class="dropdown">
+    <button class="dropbtn">Category</button>
+    <div class="dropdown-content">
+      <a href="#"><strong>Dynamic</strong> High-level Languages</a>
+      <a href="#"><strong>Static</strong> High-Level Languages</a>
+      <a href="#"><strong>Functional</strong> Languages</a>
+      <a href="#"><strong>Modern</strong> Languages</a>
+      <a href="#"><strong>Historically Important</strong> Languages</a>
+      <a href="#"><strong>Esoteric</strong> Languages</a>
+    </div>
+  </div>
+    
+    <div class="addLang">
+      <h6 class="shelB" draggable="false">Add</h6>
+      <hr style="width: 18vmin; margin-left: 44.5%; margin-bottom: 10px;">
+        <button class="langChild">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg>
+        </button>
+    </div>
+
+    <h6 class="shelA" draggable="false">Shelf</h6>
+    <hr style="width: 19vmin; margin-left: 44.5%; margin-top: 10px;">
+
+    <div class="langTrack" id="langTrack" data-mouse-down-at="0"; data-prev-percentage="0";>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" draggable="false"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#e9631c" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" draggable="false"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" draggable="false"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#1251e2" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" draggable="false"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" draggable="false"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7d918" d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" draggable="false"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" draggable="false"><linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient><linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient><path fill="url(#python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)" draggable="false"/><path fill="url(#python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"/><radialGradient id="python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"/><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"/></radialGradient><path opacity=".444" fill="url(#python-original-c)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"/></svg>
+        <img src="bash-icon-svgrepo-com.svg" alt="Icon description" draggable="false"></i>
+        <img src="sql-database-generic-svgrepo-com.svg" alt="Icon description" draggable="false"></i>
+        <img src="php-svgrepo-com.svg" alt="Icon description" draggable="false"></i>
+        <img src="lua-svgrepo-com.svg" alt="Icon description" draggable="false"></i>
+        <img src="ruby-svgrepo-com.svg" alt="Icon description" class="ruby-icon" draggable="false"></i>
+        <img src="idaiRLA50k_1729765818463.svg" alt="Icon description" class="R-icon" draggable="false"></i>
+        <img src="julia-svgrepo-com (1).svg" alt="Icon description" class="sql-icon" draggable="false"></i>
+        <img src="java-svgrepo-com.svg" alt="Icon description" class="java-icon" draggable="false"></i>
+        <img src="c--4.svg" alt="Icon description" class="sql-icon" draggable="false"></i>
+        <img src="typescript.svg" alt="Icon description" class="sql-icon" draggable="false"></i>
+        <img src="kotlin.svg" alt="Icon description" class="sql-icon" draggable="false"></i>
+        <img src="swift.svg" alt="Icon description" class="Swift-icon" draggable="false"></i>
+        <img src="icons8-dart.svg" alt="Icon description" class="dart-icon" draggable="false"></i>
+        <img src="Go-Logo_Aqua.svg" alt="Icon description" class="sql-icon" draggable="false"></i>
+        <img src="Haskell-Logo.svg" alt="Icon description" class="Haskell-icon" draggable="false"></i>
+        <img src="fsharp-svgrepo-com.svg" alt="Icon description" class="dart-icon" draggable="false"></i>
+        <img src="scala.svg" alt="Icon description" class="sql-icon" draggable="false"></i>
+        <img src="OCaml.svg" alt="Icon description" class="Ocaml-icon" draggable="false"></i>
+        <img src="Elixir.svg" alt="Icon description" class="Elixir-icon" draggable="false"></i>
+        <img src="elm-svgrepo-com.svg" alt="Icon description" class="dart-icon" draggable="false"></i>
+        <img src="clojure-svgrepo-com.svg" alt="Icon description" class="sql-icon" draggable="false"></i>
+    </div>
+    <script src="addition.js"></script>
+</body>
+</html>

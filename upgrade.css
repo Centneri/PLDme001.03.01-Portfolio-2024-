@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #141414;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+nav {
+    background-color: hsl(0, 0%, 10%);
+    border-right: 1px solid hsl(0, 0%, 15%);
+    height: 100%;
+    width: 25vmin;
+    overflow: hidden;
+    position: fixed;
+}
+
+
+::-webkit-scrollbar {
+    width: 20px;
+
+}
+  
+
+::-webkit-scrollbar-track {
+    background: hsl(215, 28%, 12%);
+    
+}
+   
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(234, 130, 51));
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(rgb(119, 236, 162), rgb(50, 119, 231), rgb(234, 130, 51));
+}
+
+.side-main {
+    color: #fff;
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.side-main:nth-child(1) {
+    font-size: 25px;
+    margin-left: 7vmin;
+    margin-top: 50%;
+}
+
+.side-h {
+    color: #fff;
+    font-family: monospace;
+    margin-left: 0.5vmin;
+    margin-top: 250%;
+    font-size: 14px;
+}
+
+.side-b {
+    color: #fff;
+    font-family: monospace;
+    margin-left: 10vmin;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.side-main:nth-child(3) {
+    margin-left: 7vmin;
+    margin-top: 4vmin;
+}
+
+.side-main:nth-child(5) {
+    margin-left: 7vmin;
+    margin-top: 1vmin;
+}
+
+
+.side-main::after {
+    content: "";
+    position: absolute;
+    margin-bottom: 38vmax;
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 500ms;
+    border-radius: 2px;
+}
+
+.side-main:hover:after {
+    width: 100%;
+}
+
+.upgrades {
+    display: inline-flex;
+}
+
+.up1 {
+    color: #fff;
+    font-family: monospace;
+    position: absolute;
+    margin-left: 60%;
+    font-size: 30px;
+    margin-top: 25vmin;
+    transform: rotateX(-10deg) rotateY(20deg);
+    box-shadow: 10px 5px 5px rgb(12, 149, 76);
+    border-bottom-right-radius: 5px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.uprice {
+    color: #fff;
+    font-family: monospace;
+    position: absolute;
+    margin-left: 65%;
+    font-size: 30px;
+    margin-top: 50vmin;
+    transform: rotateX(10deg) rotateY(20deg);
+    box-shadow: -10px 5px 5px rgb(12, 149, 76);
+    border-bottom-left-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.sprice {
+    color: #fff;
+    font-family: monospace;
+    position: absolute;
+    margin-left: 22%;
+    font-size: 30px;
+    margin-top: 65%;
+    transform: rotateX(10deg) rotateY(15deg);
+    box-shadow: -10px 5px 5px #05c7fc;
+    border-bottom-left-radius: 5px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.pprice {
+    color: #fff;
+    font-family: monospace;
+    position: absolute;
+    margin-left: 65%;
+    font-size: 30px;
+    margin-top: 110%;
+    transform: rotateX(10deg) rotateY(-15deg);
+    box-shadow: 10px 5px 5px #ff8000;
+    border-bottom-right-radius: 5px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.up2 {
+    color: #fff;
+    font-family: monospace;
+    position: absolute;
+    margin-left: 65%;
+    box-shadow: 10px 5px 5px #ff8000;
+    border-bottom-right-radius: 5px;
+    transform: rotateX(10deg) rotateY(-15deg);
+    font-size: 30px;
+    margin-top: 102.5%;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.up3 {
+    color: #fff;
+    font-family: monospace;
+    position: absolute;
+    margin-left: 24%;
+    transform: rotateX(10deg) rotateY(15deg);
+    box-shadow: -10px 5px 5px #05c7fc;
+    border-bottom-left-radius: 5px;
+    font-size: 30px;
+    margin-top: 59%;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.normUp {
+    background: hsl(0, 0%, 10%);
+    width: 70vmin;
+    height: 80vmin;
+    transform: rotateX(10deg) rotateY(10deg);
+    margin-top: 7%;
+    margin-left: 15%;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 15%);
+    position: absolute;
+    box-shadow: 10px 5px 5px rgb(12, 149, 76);
+}
+
+.upgrades > .svg1 {
+    width: 7vmin;
+    height: 7.5vmin;
+    margin-left: 66%;
+    transform: rotate(90deg);
+    margin-top: 36%;
+    position: absolute;
+}
+
+.upgrades > .svg2 {
+    width: 7vmin;
+    height: 7.5vmin;
+    margin-left: 33%;
+    transform: rotate(90deg);
+    margin-top: 80%;
+    position: absolute;
+}
+
+.normUp > ul > li {
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+
+.premUp > ul > li {
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.studentUp > ul > li {
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+.premUp {
+    background: hsl(0, 0%, 10%);
+    width: 70vmin;
+    height: 70vmin;
+    transform: rotateX(10deg) rotateY(-10deg);
+    margin-left: 20%;
+    margin-top: 100%;
+    border-radius: 10px;
+    border: 5px;
+    color: #FFF;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 1em;
+    position: absolute;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -3; right: -1.5; bottom: -3; left: -1.5;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(to right, red, orange);
+    }
+}
+
+
+
+.studentUp {
+    background: hsl(0, 0%, 10%);
+    width: 70vmin;
+    height: 70vmin;
+    margin-left: 57%;
+    margin-top: 55%;
+    border-radius: 10px;
+    transform: rotateX(10deg) rotateY(10deg);
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    border-radius: 1em;
+    position: absolute; 
+    &:before {
+        content: '';
+        position: absolute;
+        top: -3; right: -1.5; bottom: -3; left: -1.5;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(to right, cyan, blue);
+    }
+}
+
+
+
+.upH {
+    color: #fff;
+    font-family: monospace;
+    margin-left: 50vmin;
+}
+
+.head-div {
+    height: 10vmin;
+}
+
+.vertical-line{
+    position: absolute;
+    border-left: 1px solid hsl(0, 0%, 20%);
+    margin: 0 10px;
+    height: 29vmax;
+    margin-left: 50%;
+}
